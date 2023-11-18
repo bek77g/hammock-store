@@ -11,7 +11,7 @@ const Login = () => {
           type='text'
           placeholder='Логин или E-mail'
         />
-        <input className={styles.input} type='password' placeholder='пароль' />
+        <input className={styles.input} type='password' placeholder='Пароль' />
       </div>
       <Button className={styles.button}>Войти</Button>
     </form>
