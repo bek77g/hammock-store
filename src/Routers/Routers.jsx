@@ -1,3 +1,7 @@
+import MainLayout from 'layout/MainLayout';
+import Login from 'pages/Auth/Login';
+import Register from 'pages/Auth/Register';
+
 import Blog from 'pages/Blog';
 import Catalog from 'pages/Catalog';
 import Delivery from 'pages/Delivery';
@@ -11,13 +15,19 @@ const Routers = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/catalog' element={<Catalog />} />
-        <Route path='/catalog/:productId' element={<Detail />} />
-        <Route path='/sales' element={<Sales />} />
-        <Route path='/delivery' element={<Delivery />} />
-        <Route path='/blog' element={<Blog />} />
-        <Route path='/blog/:postId' element={<Post />} />
+        <Route path='/' element={<MainLayout />}>
+          <Route index element={<Home />} />
+          <Route path='catalog' element={<Catalog />} />
+          <Route path='catalog/:productId' element={<Detail />} />
+          <Route path='sales' element={<Sales />} />
+          <Route path='delivery' element={<Delivery />} />
+          <Route path='blog' element={<Blog />} />
+          <Route path='blog/:postId' element={<Post />} />
+        </Route>
+        <Route path='/auth'>
+          <Route path='login' element={<Login />} />
+          <Route path='register' element={<Register />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
