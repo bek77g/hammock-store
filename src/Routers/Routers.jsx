@@ -1,4 +1,5 @@
 import MainLayout from 'layout/MainLayout';
+import AuthLayout from 'pages/Auth';
 import Login from 'pages/Auth/Login';
 import Register from 'pages/Auth/Register';
 
@@ -24,7 +25,7 @@ const Routers = () => {
           <Route path='blog' element={<Blog />} />
           <Route path='blog/:postId' element={<Post />} />
         </Route>
-        <Route path='/auth'>
+        <Route path='/auth' element={<AuthLayout />}>
           <Route path='login' element={<Login />} />
           <Route path='register' element={<Register />} />
         </Route>
