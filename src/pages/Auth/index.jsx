@@ -14,9 +14,9 @@ const AuthLayout = () => {
           <div className={styles.methods}>
             <p className={styles.methodsTitle}>Или войдите через</p>
             <div className={styles.methodsWrapper}>
-              <VKLogo />
-              <FacebookLogo />
-              <GoogleLogo />
+              <VKLogo className={styles.methodsItem} />
+              <FacebookLogo className={styles.methodsItem} />
+              <GoogleLogo className={styles.methodsItem} />
             </div>
           </div>
         </div>

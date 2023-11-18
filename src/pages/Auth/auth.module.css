@@ -53,3 +53,12 @@
   gap: 30px;
   justify-content: center;
 }
+
+.methodsItem {
+  cursor: pointer;
+}
+
+.methodsItem:hover {
+  -webkit-filter: brightness(30%);
+  filter: brightness(85%);
+}
