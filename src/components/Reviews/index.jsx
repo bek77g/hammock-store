@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import { useCallback, useRef } from 'react';
 
-const Reviews = () => {
+const Reviews = ({ isMobile = false }) => {
   const sliderRef = useRef(null);
 
   const handlePrev = useCallback(() => {
@@ -18,16 +18,18 @@ const Reviews = () => {
   }, []);
 
   return (
-    <div className={styles.reviews}>
+    <div className={`${styles.reviews} ${isMobile ? styles.isMobile : null}`}>
       <div className='container'>
         <div className={styles.content}>
           <div className={styles.navigation}>
             <FaChevronLeft
+              color={isMobile ? '#000' : '#fff'}
               size={30}
               className={styles.prevBtn}
               onClick={handlePrev}
             />
             <FaChevronRight
+              color={isMobile ? '#000' : '#fff'}
               size={30}
               className={styles.nextBtn}
               onClick={handleNext}

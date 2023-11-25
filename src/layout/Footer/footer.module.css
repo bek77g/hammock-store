@@ -1,11 +1,11 @@
-.footer {
+.outside {
   position: relative;
   padding: 70px 0;
   background: var(--light-grey) url('../../assets/images/footer/bg.png')
     center/cover no-repeat;
 }
 
-.footer::before {
+.outside::before {
   content: '';
   position: absolute;
   background-color: rgba(0, 0, 0, 0.59);
@@ -21,6 +21,7 @@
   position: relative;
   z-index: 1;
   display: flex;
+  gap: 30px;
   justify-content: space-around;
   align-items: center;
 }
