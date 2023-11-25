@@ -1,3 +1,8 @@
+:root {
+  --dark-grey: #c4c4c4;
+  --light-grey: #d4d3d3;
+}
+
 * {
   margin: 0;
   padding: 0;

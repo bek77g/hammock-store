@@ -1,4 +1,7 @@
 import 'react-toastify/dist/ReactToastify.css';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import { ToastContainer } from 'react-toastify';
 import { Provider } from 'react-redux';
 import Routers from './Routers/Routers';
