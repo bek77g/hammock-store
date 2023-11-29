@@ -1,6 +1,6 @@
 .outside {
   position: relative;
-  padding: 70px 0;
+  padding: 70px 0 0;
   background: var(--light-grey) url('../../assets/images/footer/bg.png')
     center/cover no-repeat;
 }
@@ -62,4 +62,64 @@
 .submit {
   font-size: 16px;
   font-weight: 800;
+}
+
+.bottom {
+  margin-top: 70px;
+  padding: 37px 0 70px;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.bottomContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px 80px;
+  color: #fff;
+}
+
+.bottomInfo,
+.bottomNav,
+.bottomSearch {
+  width: calc((100% / 3) - 54px);
+}
+
+.bottomText {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.bottomText p {
+  font-size: 12px;
+}
+
+.bottomText a {
+  font-size: 16px;
+}
+
+.bottomNavTitle {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.bottomNavList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 15px 30px;
+  height: 102px;
+}
+
+.bottomSearch {
+  border-radius: 10px;
+  border: none;
+  background: #fff;
+  padding: 12px 20px;
+  font-size: 16px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }

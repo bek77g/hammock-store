@@ -1,5 +1,6 @@
-import Button from 'components/Button';
 import styles from './footer.module.css';
+import { ReactComponent as Logo } from 'assets/icons/main/columnLogo.svg';
+import Button from 'components/Button';
 import Reviews from 'components/Reviews';
 import useWindowWidth from 'hooks/useWindowWidth';
 
@@ -35,6 +36,58 @@ const Footer = () => {
               </div>
             </form>
             {width >= 960 && <Reviews />}
+          </div>
+        </div>
+        <div className={styles.bottom}>
+          <div className='container'>
+            <div className={styles.bottomContent}>
+              <div className={styles.bottomInfo}>
+                <Logo />
+                <div className={styles.bottomText}>
+                  <p>Качественные и надежные гамаки на любой вес</p>
+                  <a href='tel:+ 7 (960) 495 18 18'>+ 7 (960) 495 18 18</a>
+                  <a href='mailto:info@pohod23.ru'>info@pohod23.ru</a>
+                  <p>935902, Россия, Новороссийск, ул. Сухумское шоссе 80</p>
+                </div>
+              </div>
+              <nav className={styles.bottomNav}>
+                <h4 className={styles.bottomNavTitle}>Навигация</h4>
+                <ul className={styles.bottomNavList}>
+                  <li className={styles.bottomNavLink}>
+                    <a href=''>Главная </a>
+                  </li>
+                  <li className={styles.bottomNavLink}>
+                    <a href=''>Каталог</a>
+                  </li>
+                  <li className={styles.bottomNavLink}>
+                    <a href=''>Акции </a>
+                  </li>
+                  <li className={styles.bottomNavLink}>
+                    <a href=''>Контакты</a>
+                  </li>
+                  <li className={styles.bottomNavLink}>
+                    <a href=''>Отзывы</a>
+                  </li>
+                  <li className={styles.bottomNavLink}>
+                    <a href=''>Блог</a>
+                  </li>
+                  <li className={styles.bottomNavLink}>
+                    <a href=''>Доставка и оплата </a>
+                  </li>
+                  <li className={styles.bottomNavLink}>
+                    <a href=''>Личный кабинет</a>
+                  </li>
+                  <li className={styles.bottomNavLink}>
+                    <a href=''>Корзина</a>
+                  </li>
+                </ul>
+              </nav>
+              <input
+                type='text'
+                className={styles.bottomSearch}
+                placeholder='Поиск'
+              />
+            </div>
           </div>
         </div>
       </div>
